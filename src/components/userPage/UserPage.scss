@@ -1,0 +1,198 @@
+@import Url("../../styles.css");
+
+.user-page {
+    position: relative;
+    width:100%;
+
+    .user-input-field {
+        position: absolute;
+        background: var(--color-white);
+        border:1px solid var(--color-border);
+        width:25vw;
+        height:fit-content;
+        padding-bottom: 55px;
+        top:35%;
+        left:24%;
+    .user-inputs{
+
+        .label {
+            h2 {
+                font-size: 17px;
+                padding-left: 20px;
+                margin-bottom:5px;
+            }
+            input {
+                width:21vw;
+                height:40px;
+                margin-left: 10px;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-color:var(--color-border);
+                outline-color: rgb(218, 218, 218);
+
+                &::placeholder {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size:13px;
+                    font-family:var(--font-poppins);
+                }
+            }
+            .select-input {
+                width:24vw;
+                padding-left: 10px;
+
+                &::placeholder {
+                    padding-left:13px;
+                    font-family:var(--font-poppins);
+                }
+            }
+            .custom-date-picker {
+                position:relative;
+
+                .date-picker {
+                    outline-color:var(--color-border);
+                    width:21vw;
+                    height:50px;
+                }
+                .calendar-icon {
+                    position:absolute;
+                    top:50%;
+                    right:10%;
+                    font-size:20px;
+                    transform: translateY(-50%);
+                    cursor:pointer;
+                    z-index: 100;
+                }
+            }
+
+        }
+    }
+    .btn {
+            margin-left: 10px;
+            margin-top:15px;
+
+        button {
+            padding:10px 25px;
+            border-radius:8px;
+            border:none;
+            font-size:14px;
+            font-weight:600;
+            cursor:pointer;
+        }
+            .reset {
+                border:1px solid var(--color-border);
+            }
+            .filter {
+                background:var(--color-primary);
+                color:white;
+                margin-left:130px;
+                border:none;
+            }
+        }
+    }
+    .status-details-container {
+
+        width:fit-content;
+        padding:10px 20px 10px 5px;
+
+        .status-items {
+            background: var(--color-white);
+            position: absolute;
+            top:50%;
+            right:0;
+            border-radius: 5px;
+            border:1px solid black;
+
+        .status-details {
+            margin:10px;
+
+            .status-icon {
+                margin-right:10px;
+            }
+            span {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        }
+
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+       .user-page {
+        .user-input-field {
+            top:41%;
+            left:23%;
+
+            .user-inputs {
+
+                .custom-date-picker {
+                    .date-picker{
+
+                    }
+
+                }
+                .btn {
+
+                    .filter{
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1017px){
+    .user-page {
+        .user-input-field {
+            .user-inputs {
+                .btn {
+
+                    button {
+                        padding:8px 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width:970px){
+    .user-page {
+        .user-input-field {
+            left:26%;
+            width:30vw;
+        }
+    }
+}
+@media screen and (max-width:900px){
+    .user-page {
+        .user-input-field {
+            width:33vw;
+        }
+    }
+}
+@media screen and (max-width:815px){
+    .user-page {
+        .user-input-field {
+           display:none;
+            .user-inputs {
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+        .user-page {
+
+         .status-details-container {
+            display: none;
+        }
+    }
+}

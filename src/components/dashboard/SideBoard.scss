@@ -1,0 +1,39 @@
+@import url("../../styles.css");
+
+.sideboard-container {
+    flex:0.2;
+    background:var(--color-white);
+    // background:var(--color-secondary);
+    padding:20px;
+
+    .sideboard-item-lists {
+        display:flex;
+        flex-direction:column;
+        margin-top: 40px;
+
+        .dashboard {
+            margin-top:30px;
+            margin-bottom:40px;
+
+        }
+        .sideboard-head-list {
+            margin-bottom:25px;
+            padding:0;
+            text-transform:uppercase;
+            font-weight:600;
+            margin-top:20px;
+            transition:transform 0.3s ease;
+        }
+    }
+}
+@media screen and (max-width:1024px) {
+    .sideboard-container{
+        width:20vw;
+    }
+}
+@media screen and (max-width:425px) {
+    .sideboard-container {
+        display:none;
+    }
+
+}

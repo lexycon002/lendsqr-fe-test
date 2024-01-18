@@ -1,0 +1,206 @@
+@import url('../../styles.css');
+
+.user-info-container {
+
+    .user-info {
+        background: var(--color-white);
+        height:fit-content;
+
+
+        .user-info-items {
+            padding-left: 30px;
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width:70%;
+
+        .user-avatar {
+            display: flex;
+            align-items: center;
+            gap:10px;
+            border-right: 1px solid rgb(230, 223, 223);
+            height:50px;
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgb(230, 223, 223);
+                height:60px;
+                width:60px;
+                border-radius: 50px;
+
+            }
+
+        .username {
+            padding-right: 30px;
+            padding-left:10px;
+            line-height:23px;
+            .user__name {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+        }
+        .user-rating {
+            border-right: 1px solid rgb(230, 223, 223);
+            padding-right: 20px;
+            line-height:23px;
+            height:50px;
+
+            span {
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .rating {
+                color:rgb(236, 176, 9);
+            }
+        }
+        .user-amount {
+            .amount {
+                font-weight: 600;
+                font-size: 22px;
+            }
+            span {
+                font-weight: 600;
+            }
+
+        }
+        }
+
+        .lists {
+            display:flex;
+            align-items: center;
+            padding-top: 75px;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            li {
+                list-style-type: none;
+                cursor: pointer;
+                font-weight: 600;
+            }
+            .active {
+                    color:var(--color-primary);
+                    padding-top:0px;
+                    border-bottom: 2px solid var(--color-primary);
+
+                }
+        }
+    }
+}
+
+@media screen and (max-width:1150px){
+    .user-info-container {
+        .user-info {
+            .user-info-items {
+                max-width:80%;
+                .user-avatar {
+
+                    .username {
+                        padding-left:5px;
+                        padding-right:10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:970px){
+    .user-info-container {
+        .user-info {
+            .user-info-items {
+                max-width:90%;
+                .user-avatar {
+
+                    .username {
+
+                        .user__name {
+                            font-size:17px;
+                        }
+                    }
+
+                }
+                .user-amount {
+                    .amount {
+                        font-size:18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:768px){
+    .user-info-container {
+        .user-info {
+            .user-info-items {
+                max-width:95%;
+                padding-left:5px;
+                .user-avatar {
+
+                    .username {
+
+                        .user__name {
+                            font-size:15px;
+                        }
+                    }
+
+                }
+                .user-rating {
+
+                    span {
+                        font-size:14px;
+                    }
+                }
+                .user-amount {
+                    .amount {
+                        font-size:14px;
+                    }
+                    span{
+                        font-size:13px;
+                    }
+                }
+            }
+        }
+    }
+    .lists {
+        padding-top:0;
+
+
+        li{
+            font-size:12px;
+        }
+    }
+}
+
+@media screen and (max-width:425px){
+    .user-info-container {
+        position: relative;
+        .user-info-items {
+
+            .user-avatar {
+                border-right: 0px;
+            }
+            .user-rating, .user-amount {
+                    display:none;
+                }
+        }
+    }
+    .lists {
+        .active {
+            display: block;
+        }
+        li {
+            display: none;
+        }
+    }
+
+}

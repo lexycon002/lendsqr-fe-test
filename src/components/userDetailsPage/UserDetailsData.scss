@@ -1,0 +1,48 @@
+@import url('../../styles.css');
+
+.user-details-data-container{
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+    .user-details {
+        display: flex;
+        align-items: center;
+        gap:10px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .user-info-data {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .user-btn {
+
+            .blacklist {
+                margin-right: 20px;
+                border:1px solid rgb(194, 64, 64);
+                padding: 5px 10px;
+                border-radius: 5px;
+                color:rgb(194, 64, 64);
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 12px;
+            }
+            .activate {
+                border:1px solid var(--color-primary);
+                padding: 5px 10px;
+                border-radius: 5px;
+                text-transform: uppercase;
+                color:var(--color-primary);
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .user-btn {
+        display:none;
+    }
+}

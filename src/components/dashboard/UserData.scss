@@ -1,0 +1,84 @@
+@import url('../../styles.css');
+
+.user-data-section {
+    margin-top: 40px;
+    margin:0 20px;
+    .user-data-container {
+        padding-bottom: 10px;
+        width:75vw;
+        background: var(--color-white);
+        border-collapse: collapse;
+        overflow-x:scroll;
+        .table-head {
+
+            .table-row {
+                text-align: left;
+
+                th {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    padding-bottom:20px;
+                    padding-top: 40px;
+                    padding-left:10px;
+
+                    .table-head-icon {
+                        margin-left: 10px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .table-body {
+            tr {
+
+                td {
+                    font-size: 14px;
+                    line-height:25px;
+                    border-bottom:1px solid rgb(241, 237, 237);
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    padding-left: 15px;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1215px){
+    .user-data-section{
+
+        .user-data-container {
+            // width:80vw;
+            .table-head {
+                .table-row {
+
+                    th{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .user-data-section{
+        .user-data-container {
+            width:80vw;
+
+            .table-head {
+
+            }
+        }
+
+    }
+}
+@media screen and (max-width:425px){
+    .user-data-section{
+        .user-data-container {
+        display:none;
+        }
+    }
+}

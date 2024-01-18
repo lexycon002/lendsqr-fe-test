@@ -1,0 +1,133 @@
+@import url('../../styles.css');
+
+.userboard {
+    background:#f2f2f2;
+    width:75vw;
+    margin-top:35px;
+    padding-right: 30px;
+
+
+    h1 {
+        padding-top: 40px;
+        padding-left: 70px;
+    }
+    .userboard-items {
+        display: grid;
+        // grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-template-columns: repeat(4, 1fr);
+        margin-left:10px;
+
+    .user-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-white);
+        // background: red;
+        width:13vw;
+        height:20vh;
+        border-radius: 10px;
+        margin:20px;
+        padding-top: 20px;
+        padding-left: 20px;
+
+        .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--color-pink);
+            border-radius: 50%;
+            width:40px;
+            height:40px;
+
+            .icon {
+            font-size: 22px;
+            }
+        }
+        .list {
+                text-transform: uppercase;
+                padding-top: 12px;
+                font-size: 15px;
+            }
+            .num {
+                font-size: 15px;
+                font-weight: bold;
+                padding-top: 5px;
+                padding-bottom: 15px;
+            }
+    }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .userboard {
+
+        .userboard-items {
+
+            .user-card {
+                width:14vw;
+                margin: 15px;
+                .icon-wrapper {
+                    width:40px;
+                    height:40px;
+                }
+                .list {
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .userboard {
+        width:80vw;
+        margin-left:0;
+
+        h1 {
+            font-size:30px;
+        }
+        .userboard-items{
+            grid-template-columns: repeat(3,1fr);
+            .user-card {
+                width:18vw;
+            }
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .userboard {
+        margin-left: 15px;
+        h1 {
+            font-size:25px;
+            padding-left: 30px;
+        }
+        .userboard-items{
+            grid-template-columns: repeat(2,1fr);
+            .user-card {
+                width:30vw;
+                padding-left: 10px;
+                padding-right: 15px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .userboard {
+
+        h1 {
+            font-size:25px;
+            padding-left: 30px;
+        }
+        .userboard-items{
+            display:block;
+            .user-card {
+                width:60vw;
+
+                .list {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

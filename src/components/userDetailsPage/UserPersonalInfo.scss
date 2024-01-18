@@ -1,0 +1,316 @@
+
+
+.user-personal-info {
+    background:white;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+
+    h2 {
+        padding-top: 15px;
+    }
+
+
+    .user-headings {
+        display:grid;
+        // grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+        grid-template-columns: repeat(5,1fr);
+        margin-bottom: 30px;
+        line-height:25px;
+
+        .headerlist {
+            padding-top: 30px;
+        }
+        .user-headlist {
+            .user-head {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight:normal;
+
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .border {
+        max-width:95%;
+        border:1px solid rgb(230, 223, 223);
+    }
+
+    .user-history {
+        padding-bottom: 30px;
+        .user-history-info {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            line-height: 25px;
+
+            .user-history-heading {
+
+                span {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    // font-weight: bold;
+                }
+                .user-status {
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+            }
+            .history-heading {
+                padding-top: 20px;
+            }
+        }
+    }
+    .user-social{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        max-width:80%;
+        line-height: 25px;
+        padding-bottom: 30px;
+
+        .user-social-heading {
+            span {
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+            .user-handle {
+                font-weight: bold;
+                text-transform: lowercase;
+            }
+
+        }
+    }
+    .user-guarantor {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-bottom: 30px;
+        line-height: 25px;
+
+        .guarantor-infos {
+            span {
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+            .user-details {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }
+    }
+    .user-guarantor-2 {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding-top: 30px;
+        line-height:25px;
+
+        .guarantor-2-infos {
+
+            span {
+                font-size: 13px;
+                text-transform: uppercase;
+            }
+            .user-details {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:967px) {
+    .user-personal-info {
+
+        .user-headings {
+            grid-template-columns: repeat(3, 1fr);
+
+            .headerlists {
+                padding-top: 30px;
+            }
+            .user-headlist {
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+        // User history
+        .user-history {
+            .user-history-info {
+                grid-template-columns: repeat(3, 1fr);
+
+                .user-history-heading {
+                    span {
+                        font-size: 11px;
+                    }
+                }
+                .his-head {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        // user social
+        .user-social {
+            max-width:100%;
+
+        }
+    }
+}
+@media screen and (max-width:680px) {
+    .user-personal-info {
+
+        .user-headings {
+            grid-template-columns: repeat(2, 1fr);
+
+            .email {
+                    padding-top: 30px;
+                }
+            .headerlists {
+                padding-top: 30px;
+            }
+            .user-headlist {
+
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+        // User history
+        .user-history {
+            .user-history-info {
+                grid-template-columns: repeat(3, 1fr);
+
+                .user-history-heading {
+                    span {
+                        font-size: 11px;
+                    }
+                }
+                .his-head {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        // user social
+        .user-social {
+            max-width:100%;
+
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .user-personal-info {
+        padding-left: 20px;
+        width:85vw;
+        h2 {
+            font-size: 18px;
+        }
+        .user-headings {
+            line-height: 15px;
+            .headerlists {
+                padding-top: 30px;
+            }
+            .user-headlist {
+                .user-head {
+                    font-size: 10px;
+                }
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+        // user history
+        .user-history {
+
+            .user-history-info {
+                grid-template-columns: repeat(2,1fr);
+
+                .sector-employ {
+                    padding-top: 20px;
+                }
+            }
+
+        }
+        // user gurantor
+        .user-guarantor {
+            grid-template-columns:repeat(2,1fr);
+
+            .--guarantor-infos {
+                padding-top: 20px;
+            }
+        }
+
+        //user gurantor 2
+        .user-guarantor-2 {
+
+            grid-template-columns: repeat(2, 1fr);
+
+            .--guarantor-infos {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width:320px) {
+    .user-personal-info {
+        padding-left: 10px;
+        h2 {
+            font-size: 18px;
+        }
+        .user-headings {
+            line-height: 15px;
+            .headerlists {
+                padding-top: 30px;
+            }
+            .user-headlist {
+                .user-head {
+                    font-size: 10px;
+                }
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        //user history
+        .user-history {
+            .user-history-info {
+                .user-history-heading {
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+            }
+        }
+        // user social
+        .user-social {
+
+            .user-social-heading {
+
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+        // user guarantor
+        .user-guarantor {
+
+            .guarantor-infos {
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+        // user guarantor 2
+        .user-guarantor-2 {
+
+            .guarantor-2-infos {
+                span {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
