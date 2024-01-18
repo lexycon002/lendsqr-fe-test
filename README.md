@@ -16,10 +16,11 @@ The primary tech stack utilized is **React**, a JavaScript framework suitable fo
 # React hooks
 - React hooks such as useState, useEffect was used in managing the state of the web application
 
-# The dashboard - This was divided into three components, the header, the sideboard and the userboard.
-- The dasbboard was breakdown into some components because of:
-    - code readability
-    - code reuseability
+# The dashboard
+    - This was divided into three components, the header, the sideboard and the userboard.
+    - The dasbboard was breakdown into some components because of:
+        - code readability
+        - code reuseability
 
 - The UserData file is where i fetched the data from an API generated from json-generator.com then mocked the response body using Mocki.io as instructed in the instruction attached to the assessment question.
 - I used asyn-await to fetch the data from the API as this enable the removal of .then() callbacks and in turns return an asynchronous resolved data. i used the async-await function to wait for the promise.
