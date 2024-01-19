@@ -1,7 +1,7 @@
-import React from 'react';
+import React  from 'react';
 import "./Header.scss";
 import logoImg from "../../lendSqr_img/lendsqr-logo.svg";
-import { Fa6Icons, IoIcons, Io5Icons } from "../../icon";
+import { Fa6Icons, IoIcons } from "../../icon";
 import Avatar from "react-avatar";
 import { Link } from "react-router-dom";
 
@@ -25,10 +25,16 @@ const Header = () => {
             Adedeji
             <span className="drop-down-icon"><IoIcons.DropDown /></span>
           </span>
-          <Io5Icons.MenuClose className="close-btn" />
         </div>
       </div>
-      <IoIcons.MenuBar className="menu-btn" />
+      <div className="open-button">
+        <IoIcons.MenuBar className="menuIcon" />
+      </div>
+      <div className="nav-links">
+        <span><Link to="/dashboard" className="links"> Home </Link></span>
+        <span><Link to="/userpage" className="links"> User Page </Link></span>
+        <span><Link to="/userdetails" className="links"> User Details </Link></span>
+      </div>
     </div>
   );
 };

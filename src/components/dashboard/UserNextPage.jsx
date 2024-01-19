@@ -28,7 +28,7 @@ const totalPages = userData ? Math.ceil(userData.length / userPerPage) : 0;
             <div className="num-list">
                 {Array.from( { length: totalPages }, (_, index) => (
                     <span key={index} onClick={() => setCurrentPage(index + 1)}>
-                        {(index < 3 || index > totalPages - 3) ? `${index + 1} ` : ''}
+                        {(index < 2 || index > totalPages - 2) ? `${index + 1} ` : ''}
                     </span>
                 ))}
         </div>

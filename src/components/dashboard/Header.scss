@@ -7,7 +7,7 @@
   margin-top: 30px;
   width: 100%;
 
-  .menu-btn {
+  .menuIcon {
     display: none;
   }
 
@@ -65,6 +65,9 @@
       }
     }
   }
+  .nav-links {
+    display:none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -73,10 +76,9 @@
     align-items: center;
     justify-content: space-between;
 
-    .menu-btn {
+    .menuIcon {
       display: block;
       font-size: 40px;
-      padding-right: 20px;
       cursor: pointer;
     }
 
@@ -95,11 +97,23 @@
 
 @media screen and (max-width:425px) {
   .header-container {
-    .menu-btn {
-      padding-right:0;
-    }
+    position:relative;
+
     .header-logo {
       margin-left:10px;
+    }
+    .nav-links {
+      position:absolute;
+      display:flex;
+      margin-top: 80px;
+      margin-left: 60px;
+      .links {
+        text-decoration: none;
+        color:black;
+        font-size: 15px;
+        font-family: var(--font-poppins);
+        margin-right: 20px;
+      }
     }
   }
 }

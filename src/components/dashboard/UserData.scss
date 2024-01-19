@@ -66,10 +66,26 @@
 @media screen and (max-width:1024px){
     .user-data-section{
         .user-data-container {
-            width:80vw;
+            width:90vw;
 
             .table-head {
 
+            }
+        }
+
+    }
+}
+@media screen and (max-width:768px){
+    .user-data-section{
+        .user-data-container {
+            width:115vw;
+
+            .table-head {
+                .table-row {
+                    th{
+                        font-size: 10px;
+                    }
+                }
             }
         }
 
