@@ -2,6 +2,8 @@ import React from 'react';
 import "./UserBoard.scss";
 import { FaIcons, Fa6Icons } from "../../icon";
 import UserData from "./UserData";
+import { Link } from 'react-router-dom';
+
 
 
 const UserBoard = () => {
@@ -16,7 +18,11 @@ const UserBoard = () => {
 
   return (
     <div className="userboard">
+      <Link className="link" to="/userpage">
         <h1>Users</h1>
+        {/* <FaIcons.ChevRight /> */}
+      </Link>
+        {/* <h1>Users</h1> */}
         <div className="userboard-items">
           {users.map((user, i) =>
             <div key={i} className="user-card">

@@ -4,6 +4,14 @@
     position: relative;
     width:100%;
 
+    .user-link {
+        position:absolute;
+        color:black;
+        font-size: 25px;
+        top:11%;
+        right:10%;
+    }
+
     .user-input-field {
         position: absolute;
         background: var(--color-white);

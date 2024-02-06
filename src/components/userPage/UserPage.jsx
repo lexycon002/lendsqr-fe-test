@@ -6,6 +6,7 @@ import Select from 'react-select';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FaIcons, Io5Icons } from "../../icon";
+import { Link } from 'react-router-dom';
 
 
 
@@ -52,6 +53,9 @@ const UserPage = () => {
   return (
     <div className="user-page">
         <Dashboard />
+        <Link to="/userdetails" className="user-link">
+            <FaIcons.ChevRight />
+        </Link>
     <div className="user-input-field">
         <div className="user-inputs">
             <div className="label">
